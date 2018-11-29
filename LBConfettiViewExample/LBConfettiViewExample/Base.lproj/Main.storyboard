@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LBConfettiViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-7y-G6R">
+                                <rect key="frame" x="135" y="318.5" width="105" height="30"/>
+                                <state key="normal" title="Toggle Confetti"/>
+                                <connections>
+                                    <action selector="toggleConfetti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ang-5e-Rh1"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BwW-wn-7Pk">
+                                <rect key="frame" x="62.5" y="368.5" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="hwW-Qx-h5k"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="confetti"/>
+                                    <segment title="" image="diamond"/>
+                                    <segment title="" image="star"/>
+                                    <segment title="" image="triangle"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeConfettiType:" destination="BYZ-38-t0r" eventType="valueChanged" id="yJV-to-HuY"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nnk-R7-hmY">
+                                <rect key="frame" x="60.5" y="416.5" width="254" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="dvR-rb-0Uy"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7bf-dq-tb0"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nnk-R7-hmY" firstAttribute="top" secondItem="BwW-wn-7Pk" secondAttribute="bottom" constant="20" id="405-gT-gqe"/>
+                            <constraint firstItem="nsK-7y-G6R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4H-q3-JQa"/>
+                            <constraint firstItem="nnk-R7-hmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G0w-bW-K6o"/>
+                            <constraint firstItem="BwW-wn-7Pk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pz8-o1-0w2"/>
+                            <constraint firstItem="BwW-wn-7Pk" firstAttribute="top" secondItem="nsK-7y-G6R" secondAttribute="bottom" constant="20" id="RbE-NG-i3E"/>
+                            <constraint firstItem="nsK-7y-G6R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YiP-k1-Zk7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="intensitySlider" destination="nnk-R7-hmY" id="CNb-am-IQz"/>
+                        <outlet property="styleSegmentedControl" destination="BwW-wn-7Pk" id="Q3I-AI-xyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="confetti" width="14" height="14"/>
+        <image name="diamond" width="11" height="14"/>
+        <image name="star" width="15" height="14"/>
+        <image name="triangle" width="15" height="13"/>
+    </resources>
+</document>

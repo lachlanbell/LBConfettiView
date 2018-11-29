@@ -1,0 +1,13 @@
+language: swift
+
+xcode_workspace: LBConfettiView.xcworkspace
+xcode_scheme: LBConfettiView
+osx_image: xcode10.1
+xcode_sdk: iphonesimulator12.1
+
+before_install:
+  - gem install cocoapods
+  - pod repo update
+  - gem install xcpretty-travis-formatter
+script:
+  - set -o pipefail && xcodebuild -workspace LBConfettiView.xcworkspace -scheme LBConfettiView -sdk iphonesimulator ONLY_ACTIVE_ARCH=no | xcpretty -f `xcpretty-travis-formatter`
