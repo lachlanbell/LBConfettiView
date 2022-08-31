@@ -7,21 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E20DD1321B023C80072BE90 /* ConfettiScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E20DD1221B023C80072BE90 /* ConfettiScale.swift */; };
-		0E82E28E21AFF0BF00035FA5 /* LBConfettiView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E82E28C21AFF0BF00035FA5 /* LBConfettiView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E82E29721B0067500035FA5 /* Confetti.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E82E29621B0067500035FA5 /* Confetti.xcassets */; };
-		0E82E29921B008B500035FA5 /* ConfettiStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82E29821B008B500035FA5 /* ConfettiStyle.swift */; };
-		0E82E2A321B00EFE00035FA5 /* LBConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82E29421AFF0DB00035FA5 /* LBConfettiView.swift */; };
+		0E1CD0F228BF1BB90082AF54 /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 0E1CD0F028BF1BB90082AF54 /* Sources */; };
+		0E1CD0F328BF1BB90082AF54 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1CD0F128BF1BB90082AF54 /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E20DD1221B023C80072BE90 /* ConfettiScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiScale.swift; sourceTree = "<group>"; };
+		0E1CD0F028BF1BB90082AF54 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = Sources/LBConfettiView/Sources; sourceTree = "<group>"; };
+		0E1CD0F128BF1BB90082AF54 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = Sources/LBConfettiView/Assets; sourceTree = "<group>"; };
 		0E82E28921AFF0BF00035FA5 /* LBConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LBConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E82E28C21AFF0BF00035FA5 /* LBConfettiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBConfettiView.h; sourceTree = "<group>"; };
 		0E82E28D21AFF0BF00035FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E82E29421AFF0DB00035FA5 /* LBConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBConfettiView.swift; sourceTree = "<group>"; };
-		0E82E29621B0067500035FA5 /* Confetti.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Confetti.xcassets; sourceTree = "<group>"; };
-		0E82E29821B008B500035FA5 /* ConfettiStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +32,9 @@
 		0E82E27F21AFF0BF00035FA5 = {
 			isa = PBXGroup;
 			children = (
+				0E1CD0F128BF1BB90082AF54 /* Assets */,
+				0E1CD0F028BF1BB90082AF54 /* Sources */,
 				0E82E28D21AFF0BF00035FA5 /* Info.plist */,
-				0E82E2A021B00D2C00035FA5 /* Assets */,
-				0E82E28B21AFF0BF00035FA5 /* Sources */,
 				0E82E28A21AFF0BF00035FA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,25 +47,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E82E28B21AFF0BF00035FA5 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				0E82E28C21AFF0BF00035FA5 /* LBConfettiView.h */,
-				0E82E29421AFF0DB00035FA5 /* LBConfettiView.swift */,
-				0E82E29821B008B500035FA5 /* ConfettiStyle.swift */,
-				0E20DD1221B023C80072BE90 /* ConfettiScale.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		0E82E2A021B00D2C00035FA5 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				0E82E29621B0067500035FA5 /* Confetti.xcassets */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -79,7 +54,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E82E28E21AFF0BF00035FA5 /* LBConfettiView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +84,7 @@
 		0E82E28021AFF0BF00035FA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Lachlan Bell";
 				TargetAttributes = {
 					0E82E28821AFF0BF00035FA5 = {
@@ -141,7 +115,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E82E29721B0067500035FA5 /* Confetti.xcassets in Resources */,
+				0E1CD0F228BF1BB90082AF54 /* Sources in Resources */,
+				0E1CD0F328BF1BB90082AF54 /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +127,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E82E2A321B00EFE00035FA5 /* LBConfettiView.swift in Sources */,
-				0E82E29921B008B500035FA5 /* ConfettiStyle.swift in Sources */,
-				0E20DD1321B023C80072BE90 /* ConfettiScale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +159,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -251,6 +224,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -289,6 +263,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -296,12 +271,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.lachy.LBConfettiView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -317,6 +293,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -324,12 +301,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.lachy.LBConfettiView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

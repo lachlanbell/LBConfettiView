@@ -8,7 +8,7 @@
       location = "group:LICENSE">
    </FileRef>
    <FileRef
-      location = "group:LBConfettiView/LBConfettiView.xcodeproj">
+      location = "group:LBConfettiView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LBConfettiViewExample/LBConfettiViewExample.xcodeproj">
